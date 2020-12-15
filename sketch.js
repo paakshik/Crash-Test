@@ -4,7 +4,8 @@ var weight =0;
 var deformation =0;
 var flag = "Working"
 var name = window.prompt("Please provide your name","Paakshik");
-
+var kk = window.prompt("Press Y key to start the car");
+var jj = window.prompt("Press up key to stop the test");
 function preload(){
 image1 = loadImage("image1.png")
 image2 = loadImage("image2.png")
