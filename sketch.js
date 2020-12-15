@@ -21,15 +21,17 @@ function setup() {
   car.scale = 0.5;
   wall = createSprite(730,200,20,300);
   wall.shapeColor = "red";
-   alert('Press the Y key to make the car move');
-    alert('Press the up key to stop the crash test!!')
+   
 }
 
 function draw() {
   background(0); 
   
   if (flag === "Working"){
-  
+  if (World.frameCount - 1 === 0){
+    alert("Press the Y key to start the car");
+    alert("Press the UP_ARROW o stop the test");
+  }
   speed = random(55,90);
   weight = random(10,1500);
   if (keyWentDown("y")){
