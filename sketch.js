@@ -4,7 +4,8 @@ var weight =0;
 var deformation =0;
 var flag = "Working"
 var name = window.prompt("Please provide your name","Paakshik");
-
+var kk = window.prompt("Press the Y key to make the car move")
+var mm = window.prompt("Press the up key to stop the crash test!!")
 function preload(){
 image1 = loadImage("image1.png")
 image2 = loadImage("image2.png")
@@ -26,8 +27,7 @@ function setup() {
 function draw() {
   background(0);  
   if (flag === "Working"){
-   alert('Press the Y key to make the car move');
-    alert('Press the up key to stop the crash test!!')
+
   speed = random(55,90);
   weight = random(10,1500);
   if (keyWentDown("y")){
